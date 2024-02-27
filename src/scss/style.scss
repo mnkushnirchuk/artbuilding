@@ -56,6 +56,7 @@
 @import 'components/footer';
 @import 'pages/projects';
 @import 'pages/case';
+@import 'pages/about';
 @import 'components/header-menu';
 
 
@@ -400,19 +401,21 @@ body {
     opacity: 0;
 }
 
-@media (max-width:1228px){
-    .footer__content{
+@media (max-width:1228px) {
+    .footer__content {
         flex-wrap: wrap;
         row-gap: 50px;
     }
+
     .footer__form,
     .footer__messenger-all,
     .footer__phone-all,
-    .footer__social-all{
+    .footer__social-all {
         max-width: 50%;
         width: 100%;
     }
 }
+
 @media (max-width: 1024px) {
     .page {
         background: url('@img/background-slide-1.png') no-repeat center top;
@@ -475,38 +478,45 @@ body {
     .header__menu {
         display: flex;
     }
+
     .page__title {
         display: block;
     }
 }
-@media (max-width: 768px){
-    .footer__content{
+
+@media (max-width: 768px) {
+    .footer__content {
         row-gap: 0;
     }
-    .footer__form{
+
+    .footer__form {
         order: 1;
         margin-bottom: 48px;
         max-width: 80%;
     }
-    .footer__phone-all{
+
+    .footer__phone-all {
         order: 2;
         max-width: 50%;
         width: 100%;
         margin-bottom: 20px;
     }
-    .footer__social-all{
+
+    .footer__social-all {
         order: 3;
         max-width: 50%;
         width: 100%;
     }
-    .footer__messenger-all{
+
+    .footer__messenger-all {
         order: 4;
-        .footer-title{
+
+        .footer-title {
             display: none;
         }
     }
 }
-@media (max-width: 460px) {
+@media (max-width: 432px) {
     .block__title {
         font-size: 20px;
     }

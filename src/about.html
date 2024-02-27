@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Проекты'
+})
+
+<body>
+  <div class="wrapper">
+    <div class="preloader">
+      <img src="@img/preloader_logo.png" alt="logo" class="preloader__image">
+      <div class="preloader__text">ART BUILDING GROUP</div>
+    </div>
+    @@include('html/header-menu.html')
+    <main class="about-page" id="page">
+      <div class="about">
+        <div class="about__container">
+          <h1 class="about__title">О НАС</h1>
+          <h2 class="about__subtitle">входим в Комитет МТПП по предпринимательству
+            в сфере архитектуры, проектирования и строительства</h2>
+          <a href="#" class="about__link">https://mostpp.ru/guilds/komitety</a>
+          <div class="about__slider">
+            <div class="about__slider-wrapper swiper-wrapper">
+              <div class="about__slide swiper-slide">
+                <h3 class="about__slide-title">Архитектура</h3>
+                <p class="about__slide-text">Мы создаем архитектурные шедевры, которые сочетают
+                  в себе эстетику и практичность</p>
+              </div>
+              <div class="about__slide swiper-slide">
+                <h3 class="about__slide-title">Строительство</h3>
+                <p class="about__slide-text">Наши строительные решения сочетают в себе передовые технологии
+                  и высокие стандарты качества</p>
+              </div>
+              <div class="about__slide swiper-slide">
+                <h3 class="about__slide-title">Защита бизнеса</h3>
+                <p class="about__slide-text">Предоставляем комплексные решения для минимизации рисков и обеспечения
+                  стабильности</p>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
+                <circle cx="50.9546" cy="50.9247" r="49.4565" transform="rotate(-180 50.9546 50.9247)" stroke="#989898"
+                  stroke-width="1.08696" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M26.8028 50.438L44.8134 70.4901L48.7816 70.4901L32.2975 51.8388L73.7822 51.8388L73.7822 48.6642L32.6669 48.6642L49.1785 30.0139L45.2102 30.0139L26.8028 50.438Z"
+                  fill="#3E3B37" />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
+                <circle cx="50" cy="50" r="49.4565" transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 0.95459 100.925)"
+                  stroke="#989898" stroke-width="1.08696" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M75.1064 50.438L57.0958 70.4901L53.1276 70.4901L69.6117 51.8388L28.1269 51.8388L28.1269 48.6642L69.2422 48.6642L52.7307 30.0139L56.699 30.0139L75.1064 50.438Z"
+                  fill="#3E3B37" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__image"><img src="@img/about-img.png" alt=""></div>
+        <div class="about__container">
+          <div class="about__mission">
+            <h2 class="about__mission-title">
+              <span class="about__mission-subtitle">НАША МИССИЯ</span>
+              Мы создаем не просто проекты, а настоящие истории успеха, отражающие наше стремление к инновациям и
+              качеству
+              в каждом аспекте нашей деятельности
+            </h2>
+            <div class="about__team">
+              <h3 class="about__team-title">КОМАНДА</h3>
+              <div class="about__team-counter"><span class="current">01</span><span class="total">/09</span></div>
+              <div class="about__team-wrapper swiper-wrapper">
+                <div class="about__team-slide swiper-slide">
+                  <div class="about__team-image"><img src="@img/team/1.png" alt=""></div>
+                  <div class="about__team-name">Сергей прудский</div>
+                  <div class="about__team-position">/ ведущий дизайнер</div>
+                </div>
+                <div class="about__team-slide swiper-slide">
+                  <div class="about__team-image"><img src="@img/team/2.png" alt=""></div>
+                  <div class="about__team-name">дарья ярмош</div>
+                  <div class="about__team-position">/ заместитель директора</div>
+                </div>
+                <div class="about__team-slide swiper-slide">
+                  <div class="about__team-image"><img src="@img/team/1.png" alt=""></div>
+                  <div class="about__team-name">Сергей прудский</div>
+                  <div class="about__team-position">/ ведущий дизайнер</div>
+                </div>
+                <div class="about__team-slide swiper-slide">
+                  <div class="about__team-image"><img src="@img/team/2.png" alt=""></div>
+                  <div class="about__team-name">дарья ярмош</div>
+                  <div class="about__team-position">/ заместитель директора</div>
+                </div>
+              </div>
+              <div class="about__team-navigate">
+                <div class="swiper-button-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
+                    <circle cx="50.9546" cy="50.9247" r="49.4565" transform="rotate(-180 50.9546 50.9247)"
+                      stroke="#989898" stroke-width="1.08696" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M26.8028 50.438L44.8134 70.4901L48.7816 70.4901L32.2975 51.8388L73.7822 51.8388L73.7822 48.6642L32.6669 48.6642L49.1785 30.0139L45.2102 30.0139L26.8028 50.438Z"
+                      fill="#3E3B37" />
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
+                    <circle cx="50" cy="50" r="49.4565"
+                      transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 0.95459 100.925)" stroke="#989898"
+                      stroke-width="1.08696" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M75.1064 50.438L57.0958 70.4901L53.1276 70.4901L69.6117 51.8388L28.1269 51.8388L28.1269 48.6642L69.2422 48.6642L52.7307 30.0139L56.699 30.0139L75.1064 50.438Z"
+                      fill="#3E3B37" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    @@include('html/footer.html')
+  </div>
+  @@include('html/script.html')
+</body>
+
+</html>
