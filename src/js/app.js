@@ -15,6 +15,8 @@ import BaseHelpers from './helpers/BaseHelpers.js';
 // import BurgerMenu from './modules/BurgerMenu';
 import homePage from './pages/homePage.js';
 import caseSlider from './pages/caseSlider.js';
+import aboutSlider from './pages/aboutSlider.js';
+import aboutTeam from './pages/aboutTeam.js';
 // import Tabs from './modules/Tabs';
 // import Accordion from './modules/Accordion.js';
 
@@ -193,4 +195,15 @@ homePageContent ? homePage() : null;
 const caseSliders = document.querySelectorAll('.case__slider');
 caseSliders.forEach(slider => {
 	caseSlider(slider);
+})
+
+
+const aboutSliders = document.querySelectorAll('.about__slider');
+aboutSliders.forEach(slider => {
+	aboutSlider(slider);
+});
+
+const aboutTeams = document.querySelectorAll('.about__team');
+aboutTeams.forEach(slider => {
+	aboutTeam(slider);
 })
