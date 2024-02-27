@@ -121,6 +121,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -164,6 +165,10 @@ body{
     display: flex;
     gap: 16px;
     margin-bottom: 45px;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    z-index: 1;
 }
 .pagination__item__wrapper{
     width: 55px;
@@ -382,6 +387,7 @@ body{
     }
     .slider__pagination{
         gap: 10px;
+        position: static;
     }
     .pagination__item__wrapper{
         width: 25px;
