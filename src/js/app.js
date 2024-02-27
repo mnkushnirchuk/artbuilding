@@ -185,7 +185,7 @@ document.querySelector('.slider').style.display = 'none';
 setTimeout(() => {
 	document.querySelector('.preloader').style.display = 'none';
 	document.querySelector('.slider').style.display = 'flex';
-	const elementsToAnimate = document.querySelectorAll('.slider__information, .information__counter, .block__title, .block__text, .information__more');
+	const elementsToAnimate = document.querySelectorAll('.slider__information, .information__counter');
 
 	elementsToAnimate.forEach((element, index) => {
 		setTimeout(() => {
@@ -205,6 +205,7 @@ document.querySelector('.information__burger-menu').addEventListener('click', fu
 });
 
 changeSlide(1);
+
 const paginationItems = document.querySelectorAll('.pagination__item__wrapper');
 const currentNum = document.querySelector('.current-num');
 const prevArrow = document.querySelector('.arrow-prev');
@@ -214,13 +215,25 @@ let autoSlideTimer; // Объявляем переменную для тайме
 
 // Функция для смены слайда
 function changeSlide(slideNumber) {
+	const elementsToAnimate = document.querySelectorAll('.block__title, .block__text, .information__more');
+
+	elementsToAnimate.forEach((element, index) => {
+		element.classList.remove('animate');
+	});
 	document.querySelectorAll('.information__block').forEach(block => {
 		// block.style.display = 'none';
 		block.classList.remove('active');
 	});
 
 	// document.querySelector('.information__block-' + slideNumber).style.display = 'block';
-	document.querySelector('.information__block-' + slideNumber).classList.add('active');
+	const activeSlide = document.querySelector('.information__block-' + slideNumber);
+	activeSlide.classList.add('active');
+	const blockAnimateElements = activeSlide.querySelectorAll('.block__title, .block__text, .information__more');
+	blockAnimateElements.forEach((element, index) => {
+		setTimeout(() => {
+			element.classList.add('animate');
+		}, index * 1000);
+	});
 	document.querySelectorAll('.pagination__item').forEach(item => {
 		item.classList.remove('pagination__item--active');
 	});

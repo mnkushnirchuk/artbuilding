@@ -398,7 +398,7 @@ body {
 @media (max-width: 1024px) {
     .page {
         background: url('@img/background-slide-1.png') no-repeat center top;
-        background-size: contain;
+        background-size: 140%;
         background-color: #221F1D;
         display: flex;
         align-items: center;
