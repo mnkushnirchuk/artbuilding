@@ -152,4 +152,33 @@
   &__info-maps {
     width: 100%;
   }
+  @media (max-width: 768px){
+    .footer__info-block{
+      order: 1;
+    }
+    .footer__info-adress, .footer__info-timework{
+      font-size: 14px;
+    }
+    .footer__info-maps{
+      order: 2;
+      max-height: 230px;
+      iframe{
+        max-height: 230px;
+      }
+    }
+    .footer__info-policy-link{
+      order: 3;
+      margin: 0 auto;
+      padding-top: 70px;
+      padding-bottom: 16px;
+    }
+    .footer__info-block{
+      flex-direction: column;
+      align-items: baseline;
+      gap: 4px;
+    }
+    .footer__content{
+      margin-top: 40px;
+    }
+  }
 }
