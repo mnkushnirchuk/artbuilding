@@ -138,5 +138,35 @@
 
     .swiper-button-next {}
   }
-
+}
+@media (max-width: 1243px){
+  .case__content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+  .case__box-link{
+    display: none;
+  }
+  .case__slider{
+    margin-top: 7rem;
+  }
+}
+@media (max-width:800px){
+  .case__title{
+    max-width: 80%;
+    text-align: left;
+    padding: 0 20px;
+  }
+  .case__slider{
+    margin-top: 60px;
+  }
+  .case__navigate {
+    display: flex;
+    gap: 2.08vw;
+    position: absolute;
+    bottom: 1.41vw;
+    right: 10.94vw;
+    z-index: 1;
+}
 }
