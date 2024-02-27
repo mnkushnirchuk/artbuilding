@@ -11,9 +11,10 @@
 // import Swiper, { Navigation, Pagination } from 'swiper';
 
 import BaseHelpers from './helpers/BaseHelpers.js';
-import PopupManager from './modules/PopupManager';
-import BurgerMenu from './modules/BurgerMenu';
+// import PopupManager from './modules/PopupManager';
+// import BurgerMenu from './modules/BurgerMenu';
 import homePage from './pages/homePage.js';
+import caseSlider from './pages/caseSlider.js';
 // import Tabs from './modules/Tabs';
 // import Accordion from './modules/Accordion.js';
 
@@ -187,3 +188,9 @@ setTimeout(() => {
 
 const homePageContent = document.querySelector('.home-page');
 homePageContent ? homePage() : null;
+
+
+const caseSliders = document.querySelectorAll('.case__slider');
+caseSliders.forEach(slider => {
+	caseSlider(slider);
+})

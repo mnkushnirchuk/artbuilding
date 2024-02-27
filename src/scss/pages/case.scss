@@ -1,0 +1,141 @@
+.case {
+  padding: rem(140) 0 rem(130);
+
+  &__title {
+    color: #3E3B37;
+    font-family: Arimo;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: rem(80);
+    text-align: center;
+  }
+
+  &__main-img {
+    width: 100%;
+    max-height: rem(900);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    margin-bottom: rem(100);
+  }
+
+  &__container {
+    max-width: rem(1760);
+    padding: 0 rem(20);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(100);
+  }
+
+
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: rem(73);
+
+    p {
+      color: var(--grey, #989898);
+      font-family: Inter;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 38px;
+      /* 146.154% */
+    }
+  }
+
+  &__box-title {
+    color: var(--black, #3E3B37);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  &__box-link {
+    color: var(--black, #3E3B37);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: rem(15);
+
+    &::before {
+      margin-top: 5px;
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='33' viewBox='0 0 32 33' fill='none'%3E%3Cpath d='M16.4 2.5C12.5809 2.5 8.91819 4.01714 6.21766 6.71766C3.51714 9.41819 2 13.0809 2 16.9C2 20.7191 3.51714 24.3818 6.21766 27.0823C8.91819 29.7829 12.5809 31.3 16.4 31.3C20.2191 31.3 23.8818 29.7829 26.5823 27.0823C29.2829 24.3818 30.8 20.7191 30.8 16.9C30.8 13.0809 29.2829 9.41819 26.5823 6.71766C23.8818 4.01714 20.2191 2.5 16.4 2.5ZM3.776 17.988H7.792C7.856 19.444 8.0592 20.8904 8.4 22.308H4.944C4.29953 20.9494 3.90393 19.4862 3.776 17.988ZM17.488 9.348V4.404C19.0299 4.98996 20.2969 6.1314 21.04 7.604C21.368 8.1592 21.6576 8.7368 21.904 9.332L17.488 9.348ZM22.64 11.508C23.0112 12.9208 23.232 14.3688 23.296 15.828H17.488V11.508H22.64ZM15.312 4.404V9.348H10.896C11.1428 8.75231 11.4315 8.17487 11.76 7.62C12.4999 6.14136 13.7673 4.99386 15.312 4.404ZM15.312 11.508V15.828H9.52C9.584 14.3688 9.8048 12.9208 10.176 11.508H15.312ZM7.792 15.812H3.776C3.90393 14.3138 4.29953 12.8506 4.944 11.492H8.4C8.05855 12.909 7.85493 14.3558 7.792 15.812ZM9.52 17.988H15.312V22.308H10.176C9.80486 20.8953 9.58495 19.4472 9.52 17.988ZM15.328 24.388V29.332C13.7861 28.746 12.5191 27.6046 11.776 26.132C11.4475 25.5771 11.1588 24.9997 10.912 24.404L15.328 24.388ZM17.488 29.332V24.468H21.904C21.6572 25.0637 21.3685 25.6411 21.04 26.196C20.2969 27.6686 19.0299 28.81 17.488 29.396V29.332ZM17.488 22.228V17.908H23.28C23.215 19.3672 22.9951 20.8153 22.624 22.228H17.488ZM25.024 17.908H29.04C28.9121 19.4062 28.5165 20.8694 27.872 22.228H24.4C24.736 20.836 24.9392 19.4168 25.008 17.988L25.024 17.908ZM25.024 15.748C24.9507 14.3181 24.7418 12.8984 24.4 11.508H27.856C28.5008 12.868 28.896 14.3304 29.024 15.828L25.024 15.748ZM26.624 9.348H23.76C23.2418 7.89248 22.4907 6.53076 21.536 5.316C23.527 6.20973 25.2564 7.59768 26.56 9.348H26.624ZM11.264 5.316C10.3093 6.53076 9.5582 7.89248 9.04 9.348H6.24C7.54355 7.59768 9.27299 6.20973 11.264 5.316ZM6.224 24.516H9.04C9.5582 25.9715 10.3093 27.3332 11.264 28.548C9.26748 27.6408 7.53751 26.2359 6.24 24.468L6.224 24.516ZM21.52 28.548C22.4747 27.3332 23.2258 25.9715 23.744 24.516H26.56C25.2485 26.2429 23.5197 27.6082 21.536 28.484L21.52 28.548Z' fill='%233E3B37'/%3E%3C/svg%3E");
+    }
+  }
+
+  &__slider {
+    margin-top: rem(160);
+    position: relative;
+  }
+
+  &__wrapper {
+    align-items: end;
+  }
+
+
+  &__slide {
+    margin-right: 3.13vw;
+
+    transition: all 0.5s;
+    max-width: 73.44vw;
+
+    transform: scale(0.8) translate3d(-12%, 12%, 0) !important;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    height: auto;
+    max-height: 80%;
+
+    &.swiper-slide-active {
+      max-height: 100%;
+      transform: scale(1) translate3d(0, 0, 0) !important;
+    }
+  }
+
+
+  &__navigate {
+    display: flex;
+    gap: 2.08vw;
+    position: absolute;
+    top: 1.41vw;
+    right: 10.94vw;
+    z-index: 1;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      max-width: 5.21vw;
+      cursor: pointer;
+
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .swiper-button-next {}
+  }
+}
