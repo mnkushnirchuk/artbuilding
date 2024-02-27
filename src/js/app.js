@@ -189,6 +189,9 @@ setTimeout(() => {
 const homePageContent = document.querySelector('.home-page');
 homePageContent ? homePage() : null;
 
+import headerMenu from './modules/headerMenu.js';
+const headerMainMenu = document.querySelector('.header__main');
+headerMainMenu ? headerMenu() : null;
 
 const caseSliders = document.querySelectorAll('.case__slider');
 caseSliders.forEach(slider => {
