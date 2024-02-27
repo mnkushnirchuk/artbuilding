@@ -505,17 +505,34 @@ body {
         }
     }
 }
-@media (max-width: 432px) {
+@media (max-width: 460px) {
     .block__title {
         font-size: 20px;
     }
-
     .block__text p {
         font-size: 18px;
     }
-
     .slider__information {
         min-height: 565px;
+    }
+    .footer-title{
+        font-size: 23px;
+    }
+    .footer__social-all{
+        order: 2;
+        max-width: 70%;
+        margin-bottom: 50px;
+    }
+    .footer__phone-all{
+        order: 3;
+        max-width: 70%;
+    }
+    .footer__messenger-all{
+        order: 4;
+        max-width: 70%;
+    }
+    .footer__form{
+        max-width: 100%;
     }
 }
 
