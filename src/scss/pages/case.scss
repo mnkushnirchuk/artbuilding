@@ -135,8 +135,6 @@
         height: auto;
       }
     }
-
-    .swiper-button-next {}
   }
 }
 @media (max-width: 1243px){
@@ -163,10 +161,40 @@
   }
   .case__navigate {
     display: flex;
-    gap: 2.08vw;
-    position: absolute;
-    bottom: 1.41vw;
-    right: 10.94vw;
+    gap: 24px;
+    position: static;
+    justify-content: center;
+    margin-top: 16px;
     z-index: 1;
+  }
+  .case__navigate .swiper-button-prev, .case__navigate .swiper-button-next{
+    width: 40px;
+  }
+  .case__main-img{
+    margin-bottom: 40px;
+  }
 }
+@media (max-width: 678px){
+  .case__title{
+    margin-bottom: 32px;
+    font-size: 32px;
+  }
+  .case__box-title{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .case__content,
+  .case__box{
+    gap: 20px;
+  }
+  .case__main-img{
+    margin-bottom: 40px;
+  }
+  .case__box p{
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .footer{
+    padding-top: 60px;
+  }
 }
