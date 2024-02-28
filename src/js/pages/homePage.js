@@ -123,13 +123,9 @@ const homePage = () => {
   const headerBurgerList = document.querySelector('.header-burger__menu');
   document.querySelector('.header__burger').addEventListener('click', function () {
     this.classList.toggle('active');
-    if (this.classList.contains('active')) {
-      headerBurgerList.style.display = 'flex';
-    } else {
-      headerBurgerList.style.display = 'none';
-    }
+    headerBurgerList.classList.toggle('active');
   });
-
+  
   resetAutoSlideTimer();
   let startX;
 

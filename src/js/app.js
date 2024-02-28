@@ -182,10 +182,21 @@ BaseHelpers.addLoadedClass();
 // toggleActiveClass(elementAll)
 
 
-const preloader = document.querySelector('.preloader');
-setTimeout(() => {
-	preloader.style.display = 'none';
-}, 2000);
+function showPreloader() {
+    document.querySelector('.preloader').style.display = 'flex';
+    document.body.classList.add('no-scroll');
+}
+function hidePreloader() {
+    document.querySelector('.preloader').style.display = 'none';
+    document.body.classList.remove('no-scroll');
+}
+window.onload = function() {
+    showPreloader();
+    setTimeout(function() {
+        hidePreloader();
+    }, 2000); 
+};
+
 
 
 const homePageContent = document.querySelector('.home-page');
