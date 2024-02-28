@@ -193,14 +193,19 @@ function hidePreloader() {
 window.onload = function() {
     showPreloader();
     setTimeout(function() {
+
         hidePreloader();
+		const homePageContent = document.querySelector('.home-page');
+		if(homePageContent) {
+			document.querySelector('.information__block-1').classList.add('first');
+			homePage();
+		} 
     }, 2000); 
 };
 
 
 
-const homePageContent = document.querySelector('.home-page');
-homePageContent ? homePage() : null;
+
 
 import headerMenu from './modules/headerMenu.js';
 const headerMainMenu = document.querySelector('.header__main');

@@ -1,6 +1,5 @@
 const homePage = () => {
 
-  document.querySelector('.slider').style.display = 'none';
   setTimeout(() => {
     document.querySelector('.slider').style.display = 'flex';
     const elementsToAnimate = document.querySelectorAll('.slider__information, .information__counter');
@@ -8,9 +7,9 @@ const homePage = () => {
     elementsToAnimate.forEach((element, index) => {
       setTimeout(() => {
         element.classList.add('animate');
-      }, index * 1000);
+      }, index * 500);
     });
-  }, 2000);
+  }, 1000);
 
   const informationList = document.querySelector('.information-list');
   document.querySelector('.information__burger-menu').addEventListener('click', function () {
@@ -22,7 +21,19 @@ const homePage = () => {
     }
   });
 
-  changeSlide(1);
+  let bool = true;
+  if(bool){
+    setTimeout(() => {
+      changeSlide(1);
+      document.querySelector('.information__block-1').classList.remove('first');
+      bool=false;
+    }, 2000);
+  }else {
+    changeSlide(1);
+  }
+
+
+
 
   const paginationItems = document.querySelectorAll('.pagination__item__wrapper');
   const currentNum = document.querySelector('.current-num');
@@ -30,7 +41,7 @@ const homePage = () => {
   const nextArrow = document.querySelector('.arrow-next');
   let currentSlideIndex = 1;
   let autoSlideTimer; 
-
+  
   function changeSlide(slideNumber) {
     const elementsToAnimate = document.querySelectorAll('.block__title, .block__text, .information__more');
 
@@ -40,14 +51,15 @@ const homePage = () => {
     document.querySelectorAll('.information__block').forEach(block => {
       block.classList.remove('active');
     });
-
     const activeSlide = document.querySelector('.information__block-' + slideNumber);
+    
     activeSlide.classList.add('active');
     const blockAnimateElements = activeSlide.querySelectorAll('.block__title, .block__text, .information__more');
     blockAnimateElements.forEach((element, index) => {
       setTimeout(() => {
         element.classList.add('animate');
       }, index * 1000);
+      
     });
     document.querySelectorAll('.pagination__item').forEach(item => {
       item.classList.remove('pagination__item--active');

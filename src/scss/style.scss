@@ -109,6 +109,7 @@ body {
 .page {
     width: 100vw;
     min-height: 100%;
+    background-image: url('@img/background-slide-1.png');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -327,10 +328,17 @@ body {
 }
 
 .information__block {
+    &-1 {
+        opacity: 0;
+        &.first {
+            display: block;
+        }
+    }
     padding-top: 63px;
     display: none;
 
     &.active {
+        opacity: 1;
         display: block;
     }
 }
