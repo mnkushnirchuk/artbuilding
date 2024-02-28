@@ -259,6 +259,7 @@
     }
   }
 }
+
 @media (max-width:678px){
   .about{
     padding-top: 20px;
@@ -275,6 +276,23 @@
   }
   .about__mission-title{
     font-size: 35px;
+  }
+  .about__slide-title{
+    font-size: 20px;
+  }
+  .about__slide-text{
+    font-size: 16px;
+  }
+  .about__slider .swiper-button-prev svg, .about__slider .swiper-button-next svg,
+  .about__slider::before, .about__slider::after,
+  .about__slider .swiper-button-prev, .about__slider .swiper-button-next{
+    display: none;
+  }
+  .about__slide{
+    max-width: 100%;
+  }
+  .about__slider{
+    padding: 0;
   }
 }
 @media (max-width: 528px){
