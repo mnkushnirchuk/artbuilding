@@ -80,7 +80,6 @@ html {
 body {
     font-size: 20px;
 }
-
 .preloader {
     width: 100vw;
     height: 100vh;
@@ -90,9 +89,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 52px;
-    display: none;
+    display: flex;
 }
-
 .preloader__image {
     max-width: 345px;
     width: 100%;
@@ -456,7 +454,7 @@ body {
     .slider__information {
         position: static;
         z-index: 10;
-        min-height: 440px;
+        min-height: 470px;
         max-width: calc(100% - 40px);
         margin-top: 5%;
         padding: 32px 14px;

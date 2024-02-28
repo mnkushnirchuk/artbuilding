@@ -29,9 +29,8 @@ const homePage = () => {
   const prevArrow = document.querySelector('.arrow-prev');
   const nextArrow = document.querySelector('.arrow-next');
   let currentSlideIndex = 1;
-  let autoSlideTimer; // Объявляем переменную для таймера
+  let autoSlideTimer; 
 
-  // Функция для смены слайда
   function changeSlide(slideNumber) {
     const elementsToAnimate = document.querySelectorAll('.block__title, .block__text, .information__more');
 
@@ -39,11 +38,9 @@ const homePage = () => {
       element.classList.remove('animate');
     });
     document.querySelectorAll('.information__block').forEach(block => {
-      // block.style.display = 'none';
       block.classList.remove('active');
     });
 
-    // document.querySelector('.information__block-' + slideNumber).style.display = 'block';
     const activeSlide = document.querySelector('.information__block-' + slideNumber);
     activeSlide.classList.add('active');
     const blockAnimateElements = activeSlide.querySelectorAll('.block__title, .block__text, .information__more');
@@ -55,8 +52,6 @@ const homePage = () => {
     document.querySelectorAll('.pagination__item').forEach(item => {
       item.classList.remove('pagination__item--active');
     });
-    // Необходимо убедиться, что эта строка корректно вписывается в ваш контекст, так как она отсутствовала в изначальном коде
-    // informationList.style.display = 'none'; 
     document.querySelector('.information__burger-menu').classList.remove('active');
 
     document.querySelectorAll('.pagination__item__wrapper')[slideNumber - 1].children[0].classList.add('pagination__item--active');
@@ -70,7 +65,6 @@ const homePage = () => {
       }
     });
 
-    // Перезапуск таймера авто-переключения после ручного переключения слайда
     resetAutoSlideTimer();
   }
 
@@ -137,6 +131,37 @@ const homePage = () => {
   });
 
   resetAutoSlideTimer();
+  let startX;
+
+function handleTouchStart(event) {
+  startX = event.touches[0].clientX;
+}
+function handleTouchEnd(event) {
+  const endX = event.changedTouches[0].clientX;
+  const diffX = startX - endX;
+  if (diffX > 50) {
+    nextSlide();
+  } else if (diffX < -50) {
+    prevSlide();
+  }
+}
+document.querySelector('.slider__information').addEventListener('touchstart', handleTouchStart, false);
+document.querySelector('.slider__information').addEventListener('touchend', handleTouchEnd, false);
+function nextSlide() {
+  if (currentSlideIndex < paginationItems.length) {
+    changeSlide(currentSlideIndex + 1);
+    changeNum(currentSlideIndex + 1);
+    currentSlideIndex += 1;
+  }
+}
+function prevSlide() {
+  if (currentSlideIndex > 1) {
+    changeSlide(currentSlideIndex - 1);
+    changeNum(currentSlideIndex - 1);
+    currentSlideIndex -= 1;
+  }
+}
+
 
 }
 export default homePage;
