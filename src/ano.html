@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Проекты'
+})
+
+<body>
+  <div class="wrapper">
+    <div class="preloader">
+      <img src="@img/preloader_logo.png" alt="logo" class="preloader__image">
+      <div class="preloader__text">ART BUILDING GROUP</div>
+    </div>
+    @@include('html/header-menu.html')
+    <main class="projects-page" id="page">
+      <div class="case">
+        <h1 class="case__title">АНО ЦЗБ</h1>
+        <img src="@img/background-slide-6.png" alt="" class="case__main-img">
+        <div class="case__container">
+          <div class="case__content">
+            <div class="case__box">
+              <h2 class="case__box-title">Предлагаем широкий спектр ДПО
+                и курсов повышения квалификации.</h2>
+              <p>Мы сотрудничаем с ведущими учреждениями. Проводим очные и онлайн-курсы для обучения без перерыва в рабочем графике. 
+                Мы обучаем по государственной лицензии и выдаём документы установленного образца. По итогу обучения вы получите диплом о профессиональной переподготовке.</p>
+            </div>
+            <div class="case__box">
+              <a href="#" class="case__box-link">https://artbuildinggroup.ru/#build</a>
+              <p>Программы профессиональной переподготовки направлены на получение новых компетенций.
+                Программы повышения квалификации проводятся в течение всей трудовой деятельности и направлены на совершенствование и (или) получение новых компетенций,
+                и (или) повышения профессионального уровня в рамках имеющейся квалификации.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html')
+  </div>
+  @@include('html/script.html')
+</body>
+
+</html>

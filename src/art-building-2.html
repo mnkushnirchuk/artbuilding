@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Проекты'
+})
+
+<body>
+  <div class="wrapper">
+    <div class="preloader">
+      <img src="@img/preloader_logo.png" alt="logo" class="preloader__image">
+      <div class="preloader__text">ART BUILDING GROUP</div>
+    </div>
+    @@include('html/header-menu.html')
+    <main class="projects-page" id="page">
+      <div class="case">
+        <h1 class="case__title">ART BUILDING STUDIO</h1>
+        <img src="@img/background-slide-4.png" alt="" class="case__main-img">
+        <div class="case__container">
+          <div class="case__content">
+            <div class="case__box">
+              <h2 class="case__box-title">Комплексное проектирование современных загородных домов премиум-класса.</h2>
+              <p>Одним из направлений Artbuilding Group является полный перечень услуг по строительству капитальных домов в сегменте Премиум класса и коммерческой недвижимости.
+                Профессионализм, внимание к деталям и мелочам, гарантия качества – вот идеи нашей работы.</p>
+            </div>
+            <div class="case__box">
+              <a href="#" class="case__box-link">https://artbuildinggroup.ru/#build</a>
+              <p>При строительстве домов мы используем только высококачественные материалы, которые имеют превосходный внешний вид и долговечность. А также передовые технологии по строительству, сборке и монтажу.
+                Приоритетом нашей работы являются предпочтения клиента. Artbuilding Group воплотит Ваши мечты о комфортной жизни на высшем уровне!</p>
+            </div>
+          </div>
+        </div>
+        <div class="case__slider">
+          <div class="case__wrapper swiper-wrapper">
+            <div class="case__slide swiper-slide"><img src="@img/case/slide-1.png" alt=""></div>
+            <div class="case__slide swiper-slide"><img src="@img/case/slide-1.png" alt=""></div>
+            <div class="case__slide swiper-slide"><img src="@img/case/slide-1.png" alt=""></div>
+            <div class="case__slide swiper-slide"><img src="@img/case/slide-1.png" alt=""></div>
+            <div class="case__slide swiper-slide"><img src="@img/case/slide-1.png" alt=""></div>
+            <div class="case__slide swiper-slide"><img src="@img/case/slide-1.png" alt=""></div>
+          </div>
+          <div class="case__navigate">
+            <div class="swiper-button-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
+                <circle cx="50.9546" cy="50.9247" r="49.4565" transform="rotate(-180 50.9546 50.9247)" stroke="#989898"
+                  stroke-width="1.08696" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M26.8028 50.438L44.8134 70.4901L48.7816 70.4901L32.2975 51.8388L73.7822 51.8388L73.7822 48.6642L32.6669 48.6642L49.1785 30.0139L45.2102 30.0139L26.8028 50.438Z"
+                  fill="#3E3B37" />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
+                <circle cx="50" cy="50" r="49.4565" transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 0.95459 100.925)"
+                  stroke="#989898" stroke-width="1.08696" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M75.1064 50.438L57.0958 70.4901L53.1276 70.4901L69.6117 51.8388L28.1269 51.8388L28.1269 48.6642L69.2422 48.6642L52.7307 30.0139L56.699 30.0139L75.1064 50.438Z"
+                  fill="#3E3B37" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html')
+  </div>
+  @@include('html/script.html')
+</body>
+
+</html>

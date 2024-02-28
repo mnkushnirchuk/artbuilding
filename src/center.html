@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Проекты'
+})
+
+<body>
+  <div class="wrapper">
+    <div class="preloader">
+      <img src="@img/preloader_logo.png" alt="logo" class="preloader__image">
+      <div class="preloader__text">ART BUILDING GROUP</div>
+    </div>
+    @@include('html/header-menu.html')
+    <main class="projects-page" id="page">
+      <div class="case">
+        <h1 class="case__title">ЦЕНТР ЗАЩИТЫ БИЗНЕСА</h1>
+        <img src="@img/background-slide-5.png" alt="" class="case__main-img">
+        <div class="case__container">
+          <div class="case__content">
+            <div class="case__box">
+              <h2 class="case__box-title">Центр защиты бизнеса – площадка
+                для коммуникации бизнеса
+                и правоохранительных органов.</h2>
+              <p>Наша миссия заключается в улучшении механизмов защиты предпринимателей в уголовном процессе, предотвращении незаконного давления на них, разработке предложений
+                по назначению наказаний, установлении партнерства между бизнесом и пенитенциарной системой.</p>
+            </div>
+            <div class="case__box">
+              <a href="#" class="case__box-link">https://artbuildinggroup.ru/#build</a>
+              <p>Помимо качественной правовой поддержки, помогаем
+                в повышении эффективности исполнения судебных решений и улучшении процедур принудительного исполнения
+                и защите интересов сторон, участвующих в исполнительном производстве.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html')
+  </div>
+  @@include('html/script.html')
+</body>
+
+</html>

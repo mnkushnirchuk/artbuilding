@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Проекты'
+})
+<body>
+  <div class="wrapper">
+    <div class="preloader">
+      <img src="@img/preloader_logo.png" alt="logo" class="preloader__image">
+      <div class="preloader__text">ART BUILDING GROUP</div>
+    </div>
+    @@include('html/header-menu.html')
+    <main class="projects-page" id="page">
+      <div class="case">
+        <h1 class="case__title">ДЕЖУРНЫЙ ПО БИЗНЕСУ</h1>
+        <img src="@img/background-slide-3.png" alt="" class="case__main-img">
+        <div class="case__container">
+          <div class="case__content">
+            <div class="case__box">
+              <h2 class="case__box-title">Помогаем предпринимателям в достижении максимальных результатов в бизнесе
+                с минимизацией правовых рисков.</h2>
+              <p>Команда опытных юристов, экспертов в различных отраслях права и экономики, профессионалов в области GR, многие из которых ранее работали в органах власти и управления. За 15 лет практики защиты интересов бизнеса мы получили достаточно обширный и богатый профессиональный опыт, 
+                который дает нам сегодня возможность максимально точно просчитывать возможные правовые риски и нивелировать разного рода негативные последствия.</p>
+            </div>
+            <div class="case__box">
+              <a href="#" class="case__box-link">https://artbuildinggroup.ru/#build</a>
+              <p>Помимо качественной правовой поддержки во всех отраслях права помогаем в разрешении вопросов взаимоотношения с органами власти, 
+                разработки законодательных актов, GR, проведения журналистских расследований.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html')
+  </div>
+  @@include('html/script.html')
+</body>
+</html>
