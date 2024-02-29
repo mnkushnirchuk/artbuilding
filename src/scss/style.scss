@@ -80,6 +80,10 @@ html {
 body {
     font-size: 20px;
 }
+body::before {
+    content: url('@img/background-slide-1.png') url('@img/background-slide-2.png') url('@img/background-slide-3.png') url('@img/background-slide-4.png') url('@img/background-slide-5.png') url('@img/background-slide-6.png');
+    display: none;
+  }
 .preloader {
     width: 100vw;
     min-height: 100vh;
@@ -525,6 +529,13 @@ body {
             display: none;
         }
     }
+    .preloader__image {
+        max-width: 245px;
+        width: 100%;
+    }
+    .preloader__text {
+        font-size: 30px;
+    }
 }
 @media (max-width: 432px) {
     .block__title {
@@ -554,6 +565,12 @@ body {
     }
     .footer__form{
         max-width: 100%;
+    }
+    .preloader__image {
+        max-width: 200px;
+    }
+    .preloader__text {
+        font-size: 25px;
     }
 }
 

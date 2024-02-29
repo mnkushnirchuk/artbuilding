@@ -1,4 +1,12 @@
 const homePage = () => {
+  function preloadImages(urls) {
+    urls.forEach(url => {
+      const img = new Image();
+      img.src = url;
+    });
+  }
+  
+  preloadImages(['@img/background-slide-1.png', '@img/background-slide-2.png', '@img/background-slide-3.png', '@img/background-slide-4.png', '@img/background-slide-5.png', '@img/background-slide-6.png']);
 
   setTimeout(() => {
     document.querySelector('.slider').style.display = 'flex';

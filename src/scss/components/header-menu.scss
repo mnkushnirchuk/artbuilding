@@ -9,13 +9,15 @@
     padding: 0 90px;
 }
 .header__menu-burger {
-    position: absolute;
-    z-index: 3;
-    top: 30px;
+    position: relative;
+    z-index: 10;
+    top: 0px;
     right: 20px;
     width: 70px;
-    height: 32px;
+    height: 80px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 .header__menu-burger::before,
 .header__menu-burger::after,
@@ -26,7 +28,6 @@
     height: 1px;
     background-color: #000;
     transition: all 0.3s ease;
-    z-index: 3;
 }
 
 .header__menu-burger div {
@@ -35,11 +36,11 @@
 }
 
 .header__menu-burger::before {
-    top: 8px;
+    top: 32.5px;
 }
 
 .header__menu-burger::after {
-    bottom: 8px;
+    bottom: 32.5px;
 }
 
 .header__menu-burger.active::before {
@@ -55,26 +56,25 @@
     transform: rotate(-45deg);
     transform-origin: center;
 }
-.header__menu-burger.active{
-    width: 30px;
-}
+
 .header__menu-burger.active div {
     opacity: 0;
 }
 
 .header__menu-list {
-    display: flex;
+    display: flex; 
+    padding: 32px;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: -100%;
-    left: 0;
-    background-color: #fff;
-    z-index: 2;
     align-items: center;
-    justify-content: center;
-    transition: top 0.5s ease;
+    position: fixed;
+    top: -120%; 
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #fff;
+    transition: top 0.5s ease; 
+    z-index: 4;
     .lang{
         color: #989898;
     }
