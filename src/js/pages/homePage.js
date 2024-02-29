@@ -51,6 +51,7 @@ const homePage = () => {
   let autoSlideTimer; 
   
   function changeSlide(slideNumber) {
+    document.getElementById('page').style.backgroundImage = `url('images/background-slide-${slideNumber}.png')`;
     const elementsToAnimate = document.querySelectorAll('.block__title, .block__text, .information__more');
 
     elementsToAnimate.forEach((element, index) => {
@@ -76,7 +77,7 @@ const homePage = () => {
 
     document.querySelectorAll('.pagination__item__wrapper')[slideNumber - 1].children[0].classList.add('pagination__item--active');
 
-    document.getElementById('page').style.backgroundImage = `url('images/background-slide-${slideNumber}.png')`;
+
 
     document.querySelectorAll('.nav__link').forEach((link, index) => {
       link.classList.remove('nav__link--active');

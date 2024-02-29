@@ -121,6 +121,7 @@ body::before {
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: #3E3B37;
 }
 
 .page__title {
@@ -194,7 +195,7 @@ body::before {
     margin-bottom: 45px;
     position: absolute;
     bottom: 0;
-    right: 50%;
+    right: 51%;
     z-index: 1;
 }
 
@@ -577,5 +578,22 @@ body::before {
 @media (max-width: 362px) {
     .block__title {
         font-size: 16px;
+    }
+}
+@media(max-width:1586px){
+    .slider__nav{
+        display: none;
+    }
+    .slider__pagination{
+        right: auto;
+        left: 5%;
+    }
+}
+@media(max-width: 1300px){
+    .slider__pagination{
+        display: none;
+    }
+    .slider__information{
+        max-width: 100%;
     }
 }
