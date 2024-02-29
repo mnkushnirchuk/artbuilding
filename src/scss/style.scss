@@ -121,7 +121,6 @@ body {
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #3E3B37;
 }
 
 .page__title {
@@ -439,12 +438,10 @@ body {
         justify-content: flex-start;
         flex-direction: column;
         width: 100%;
-
         .slider {
             order: 2;
         }
     }
-
     .block__title {
         font-size: 25px;
     }

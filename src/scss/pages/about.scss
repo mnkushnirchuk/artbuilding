@@ -194,11 +194,20 @@
   &__team-slide {
     max-width: rem(402);
     margin-right: rem(87);
+    transform: scale(0.7) translate3d(-12%, 12%, 0) !important;
+    height: auto;
+    max-height: 70%;
+
+    &.swiper-slide-active {
+      max-height: 100%;
+      transform: scale(1) translate3d(0, 0, 0) !important;
+    }
   }
 
   &__team-image {
     max-height: rem(480);
     margin-bottom: rem(23);
+    
 
     img {
       width: 100%;
@@ -243,6 +252,32 @@
       }
     }
   }
+  .about__team-navigate{
+    position: absolute;
+    right: 0;
+    top: 90px;
+    z-index: 10;
+  }
+  .about__team-counter{
+    color: #000;
+    font-size: 46px;
+    padding-right: 50px;
+    .current{
+      color: #CA9E6E;
+    }
+  }
+  // .about__team-slide.smaller-slide img {
+  //   width: 80%; 
+  // }
+  // .about__team-slide img {
+  //   width: 100%;
+  //   transition: all 0.5s; // Добавляем плавность перехода
+  // }
+  
+  // .about__team-slide.smaller-slide img {
+  //   width: 80%; // Уменьшаем изображение следующего слайда
+  // }
+  
 }
 @media (max-width: 868px){
   .about__mission-title{
