@@ -193,6 +193,7 @@ body::before {
     display: flex;
     gap: 16px;
     margin-bottom: 45px;
+    margin-top: 20px;
     position: absolute;
     bottom: 0;
     right: 51%;
@@ -434,7 +435,7 @@ body::before {
 @media (max-width: 1024px) {
     .page {
         background: url('@img/background-slide-1.png') no-repeat center top;
-        background-size: 140%;
+        background-size: 110%;
         background-color: #221F1D;
         display: flex;
         align-items: center;
@@ -472,7 +473,7 @@ body::before {
         position: static;
         z-index: 10;
         min-height: 470px;
-        max-width: calc(100% - 40px);
+        max-width: calc(100% - 40px) !important;
         margin-top: 5%;
         padding: 32px 14px;
     }
@@ -480,6 +481,7 @@ body::before {
     .slider__pagination {
         gap: 10px;
         position: static;
+        display: flex !important;
     }
 
     .pagination__item__wrapper {
@@ -536,6 +538,9 @@ body::before {
     }
     .preloader__text {
         font-size: 30px;
+    }
+    .page {
+        background-size: 140% !important;
     }
 }
 @media (max-width: 432px) {

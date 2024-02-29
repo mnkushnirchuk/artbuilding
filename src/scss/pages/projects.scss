@@ -128,6 +128,9 @@
     .projects{
       padding: 40px 0;
     }
+    .projects__title{
+      font-size: 45px;
+    }
   }
   @media (max-width:630px){
     .projects__box-content{
@@ -142,6 +145,10 @@
     }
     .projects__box-img {
       width: 150%;
+      }
+      .projects__title{
+        font-size: 30px;
+        margin-bottom: 32px;
       }
   }
   @media (max-width: 540px){
