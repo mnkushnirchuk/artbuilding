@@ -80,10 +80,10 @@ html {
 body {
     font-size: 20px;
 }
-body::before {
-    content: url('@img/background-slide-1.png') url('@img/background-slide-2.png') url('@img/background-slide-3.png') url('@img/background-slide-4.png') url('@img/background-slide-5.png') url('@img/background-slide-6.png');
-    display: none;
-  }
+// body::before {
+//     content: url('@img/background-slide-1.png') url('@img/background-slide-2.png') url('@img/background-slide-3.png') url('@img/background-slide-4.png') url('@img/background-slide-5.png') url('@img/background-slide-6.png');
+//     display: none;
+// }
 .preloader {
     width: 100vw;
     min-height: 100vh;
@@ -402,7 +402,6 @@ body::before {
         opacity: 1;
     }
 }
-
 .animate {
     opacity: 1;
     animation: slideInRight 1s ease-out forwards;
@@ -430,7 +429,6 @@ body::before {
         width: 100%;
     }
 }
-
 @media (max-width: 1024px) {
     .page {
         background: url('@img/background-slide-1.png') no-repeat center top;
@@ -500,7 +498,6 @@ body::before {
         display: block;
     }
 }
-
 @media (max-width: 768px) {
     .footer__content {
         row-gap: 0;
@@ -576,7 +573,6 @@ body::before {
         font-size: 25px;
     }
 }
-
 @media (max-width: 362px) {
     .block__title {
         font-size: 16px;
