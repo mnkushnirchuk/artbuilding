@@ -121,6 +121,7 @@ body::before {
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: #221F1D;
 }
 
 .page__title {
@@ -435,13 +436,12 @@ body::before {
     .page {
         background: url('@img/background-slide-1.png') no-repeat center top;
         background-size: 110%;
-        background-color: #221F1D;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
         width: 100%;
-
+        background-color: #221F1D;
         .slider {
             order: 2;
         }
@@ -547,10 +547,10 @@ body::before {
         font-size: 20px;
     }
     .block__text p {
-        font-size: 18px;
+        font-size: 15px;
     }
     .slider__information {
-        min-height: 565px;
+        min-height: 545px;
     }
     .footer-title{
         font-size: 23px;
