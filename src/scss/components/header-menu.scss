@@ -19,6 +19,15 @@
     display: flex;
     justify-content: center;
 }
+.burger__text-2{
+    margin-bottom: 50px;
+}
+.burger-menu__list .menu__link-2{
+    font-size: 22px;
+}
+.contact__link-2{
+    font-size: 18px;
+}
 .header__menu-burger::before,
 .header__menu-burger::after,
 .header__menu-burger div {
@@ -95,6 +104,21 @@
     .header__menu-list{
         justify-content: flex-start;
         padding: 50px;
+    }
+}
+@media (max-width: 430px){
+    .burger-menu__list .menu__link-2{
+        font-size: 18px;
+    }
+    .burger__text-2{
+        margin-bottom: 30px;
+    }
+    .burger-menu__list-2{
+        gap: 16px;
+    }
+    .contact__list-2{
+        margin-top: 30px;
+        margin-bottom: 55px;
     }
 }
 

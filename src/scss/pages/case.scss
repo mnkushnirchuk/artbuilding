@@ -1,5 +1,5 @@
 .case {
-  // padding: rem(140) 0 rem(130);
+  padding: 0 50px;
 
   &__title {
     color: #3E3B37;
@@ -137,6 +137,30 @@
     }
   }
 }
+@media (max-width: 1620px){
+  .case__title{
+    font-size: 45px;
+    margin-bottom: 3.5rem;
+  }
+  .case__box-title{
+    font-size: 27px;
+  }
+  .case__box-link{
+    font-size: 25px;
+  }
+  .case__box p{
+    font-size: 20px;
+  }
+  .case__main-img{
+    margin-bottom: 4.25rem;
+  }
+  .case__slider{
+    margin-top: 7rem;
+  }
+  .case__navigate {
+    right: 5vw;
+  }
+}
 @media (max-width: 1243px){
   .case__content{
     display: flex;
@@ -196,5 +220,16 @@
   }
   .footer{
     padding-top: 60px;
+  }
+}
+@media (max-width:530px){
+  .case{
+  padding: 0 20px;
+  .case__title{
+    padding: 0;
+  }
+  .case__container{
+    padding: 0;
+  }
   }
 }
