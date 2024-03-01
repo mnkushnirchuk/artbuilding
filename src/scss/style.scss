@@ -80,10 +80,6 @@ html {
 body {
     font-size: 20px;
 }
-// body::before {
-//     content: url('@img/background-slide-1.png') url('@img/background-slide-2.png') url('@img/background-slide-3.png') url('@img/background-slide-4.png') url('@img/background-slide-5.png') url('@img/background-slide-6.png');
-//     display: none;
-// }
 .preloader {
     width: 100vw;
     min-height: 100vh;
@@ -357,7 +353,7 @@ body {
     padding-top: 28px;
     line-height: 26px;
     padding-bottom: 32px;
-    min-height: 300px;
+    min-height: 350px;
 }
 
 .information__more {
@@ -413,13 +409,96 @@ body {
 .information__more {
     opacity: 0;
 }
+@media (max-width: 1620px){
+    .slider__nav{
+        font-size: 18px;
+        max-width: 340px;
+        padding: 80 25px;
+    }
+    .slider__information{
+        max-width: 650px;
+        padding-left: 60px;
+    }
+    .block__title{
+    font-size: 40px;
+    }
+    .row__title{
+        font-size: 35px;
+    }
+    .slider__pagination{
+        right: 47%;
+    }
+    .slider__information .nav__list{
+        gap: 30px;
+        padding-right: 30px;
+    }
+    .information__block{
+        padding-top: 30px;
+    }
+    .slider__footer__row {
+        padding-bottom: 15px;
+    }
+}
+@media (max-width: 1440px){
+    .slider__pagination{
+        gap: 8px;
+        right: 50%;
+    }
+    .pagination__item{
+        width: 40px;
+    }
+    .pagination__item__wrapper{
+        width: 45px;
+    }
+}
 
+@media (max-width: 1300px){
+    .slider__nav{
+        max-width: 290px;
+        padding: 80 15px;
+        .nav__link{
+            font-size: 17px;
+        }
+    }
+    .slider__information{
+        max-width: 550px;
+        padding-left: 50px;
+    }
+    .block__title{
+    font-size: 30px;
+    }
+    .block__text{
+        font-size: 18px;
+    }
+    .slider__pagination{
+        right: 47%;
+    }
+    .slider__information .nav__list{
+        gap: 30px;
+        padding-right: 30px;
+    }
+    .information__block{
+        padding-top: 0px;
+    }
+    .row__title{
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+@media (max-width: 1192px){
+    .slider__nav{
+        display: none;
+    }
+    .slider__pagination{
+        left: 5%;
+        right: auto;
+    }
+}
 @media (max-width:1228px) {
     .footer__content {
         flex-wrap: wrap;
         row-gap: 50px;
     }
-
     .footer__form,
     .footer__messenger-all,
     .footer__phone-all,
@@ -429,96 +508,33 @@ body {
     }
 }
 @media (max-width: 1024px) {
-    .page {
-        background: url('@img/background-slide-1.png') no-repeat center top;
-        background-size: 140%;
-        background-color: #221F1D;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        width: 100%;
-        .slider {
-            order: 2;
-        }
-    }
-    .block__title {
-        font-size: 25px;
-    }
-
-    .information__more {
-        margin-bottom: 0px;
-    }
-
-    .information__counter,
-    .information__block {
-        margin-top: 0px;
-        padding-top: 0px;
-    }
-
-    .slider__nav,
-    .slider__footer__row,
-    .information__counter,
-    .information__nav {
+    .slider__pagination{
         display: none;
     }
-
-    .slider__information {
-        position: static;
-        z-index: 10;
-        min-height: 470px;
-        max-width: calc(100% - 40px) ;
-        margin-top: 5%;
-        padding: 32px 14px;
-    }
-
-    .slider__pagination {
-        gap: 10px;
-        position: static;
-        display: flex;
-        margin-top: 20px;
-    }
-
-    .pagination__item__wrapper {
-        width: 25px;
-    }
-
-    .pagination__item {
-        width: 20px;
-    }
-
-    .header__menu {
-        display: flex;
-    }
-
-    .page__title {
-        display: block;
+    .slider__information{
+        max-width: 100%;
     }
 }
 @media (max-width: 768px) {
     .footer__content {
         row-gap: 0;
     }
-
     .footer__form {
         order: 1;
         margin-bottom: 48px;
         max-width: 80%;
     }
-
     .footer__phone-all {
         order: 2;
         max-width: 50%;
         width: 100%;
         margin-bottom: 20px;
     }
-
     .footer__social-all {
         order: 3;
         max-width: 50%;
         width: 100%;
     }
-
     .footer__messenger-all {
         order: 4;
 
@@ -532,6 +548,61 @@ body {
     }
     .preloader__text {
         font-size: 30px;
+    }
+    .page {
+        background: url('@img/background-slide-1.png') no-repeat center top;
+        background-size: 140%;
+        background-color: #221F1D;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        .slider {
+            order: 2;
+        }
+    }
+    .block__title {
+        font-size: 25px;
+    }
+    .information__more {
+        margin-bottom: 0px;
+    }
+    .information__counter,
+    .information__block {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .slider__nav,
+    .slider__footer__row,
+    .information__counter,
+    .information__nav {
+        display: none;
+    }
+    .slider__information {
+        position: static;
+        z-index: 10;
+        min-height: 470px;
+        max-width: calc(100% - 40px) ;
+        margin-top: 5%;
+        padding: 32px 14px;
+    }
+    .slider__pagination {
+        gap: 10px;
+        position: static;
+        display: flex;
+        margin-top: 20px;
+    }
+    .pagination__item__wrapper {
+        width: 25px;
+    }
+    .pagination__item {
+        width: 20px;
+    }
+    .header__menu {
+        display: flex;
+    }
+    .page__title {
+        display: block;
     }
 }
 @media (max-width: 432px) {
@@ -575,7 +646,7 @@ body {
         font-size: 16px;
     }
 }
-@media(max-width:1586px){
+@media(max-width:1024px){
     .slider__nav{
         display: none;
     }
@@ -584,11 +655,11 @@ body {
         left: 5%;
     }
 }
-@media(min-width:1024px) and (max-width: 1300px){
-    .slider__pagination{
-        display: none;
-    }
-    .slider__information{
-        max-width: 100%;
-    }
-}
+// @media(min-width:1024px) and (max-width: 1300px){
+//     .slider__pagination{
+//         display: none;
+//     }
+//     .slider__information{
+//         max-width: 100%;
+//     }
+// }
