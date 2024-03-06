@@ -37,8 +37,6 @@
     gap: 16px;
   }
 
-  &__phone-title {}
-
   &-title {
     color: #3E3B37;
     font-size: 32px;
@@ -65,17 +63,9 @@
     flex-direction: column;
     gap: 16px;
   }
-
-  &__messenger-title {}
-
   &__messenger-link {
     text-decoration: underline;
   }
-
-  &__social-all {}
-
-  &__social-title {}
-
   &__social-block {
     display: flex;
     gap: 16px;
@@ -87,11 +77,6 @@
       height: auto;
     }
   }
-
-  &__form {}
-
-  &__form-title {}
-
   &__form-block {
     margin-top: 4px;
     display: flex;
@@ -153,9 +138,6 @@
     line-height: normal;
     text-transform: uppercase;
   }
-
-  &__info-timework {}
-
   &__info-policy-link {
     color: #989898;
     font-size: 16px;
