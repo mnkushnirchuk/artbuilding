@@ -168,7 +168,9 @@
   @media (max-width: 540px){
     .projects__box-img {
       width: 130%;
+      img{
       max-height: 220px;
+      }
     }
     .projects__box-content{
     .projects__box-title, .projects__box-text{
