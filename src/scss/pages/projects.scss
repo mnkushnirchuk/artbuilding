@@ -103,7 +103,7 @@
   }
   @media (max-width: 1184px){
     .projects__box-content{
-      padding: 40px 65px;
+      padding: 20px 65px;
       justify-content: space-between;
     }
     .projects__box-title{
@@ -114,9 +114,6 @@
     .projects__box-text{
       margin-bottom: 0px;
     }
-    .projects__box-img {
-      width: 120%;
-    }
   }
   @media (max-width: 900px){
     .projects__box-content{
@@ -125,6 +122,9 @@
     .projects__box-link svg{
       max-width: 80px;
       height: auto;
+      position: absolute;
+      top: 15px;
+      right: 20px;
     }
     .projects__box-title{
       font-size: 35px;
@@ -144,41 +144,73 @@
     .projects__box-content{
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 80px 30px;
+      padding: 20px;
       .projects__box-title,
       .projects__box-text{
         max-width: 80%;
         width: 100%;
       }
-    }
-    .projects__box-img {
-      width: 150%;
+      .projects__box-title{
+        font-size: 32px;
+        margin-bottom: 10px;
+        line-height: 33px;
+      } 
+      .projects__box-text{
+        font-size: 16px;
+        line-height: 18px;
       }
+    }
       .projects__title{
         font-size: 30px;
         margin-bottom: 32px;
       }
   }
   @media (max-width: 540px){
+    .projects__box-img {
+      width: 130%;
+    }
     .projects__box-content{
-      padding: 40px 30px;
+    .projects__box-title, .projects__box-text{
+      max-width: 75%;
+    }
     }
   }
   @media (max-width: 465px){
-    .projects__box-content{
-      padding: 20px;
-    }
     .projects__box-title{
       font-size: 28px;
     }
-    .projects__box-text{
-      font-size: 16px;
+  }
+  @media (max-width:730px){
+    padding: 0px;
+    .projects__title{
+      padding-left: 50px;
+    }
+  }
+  @media (max-width: 530px){
+    .projects__title{
+      padding-left: 20px;
+    }
+  }
+  @media (max-width: 390px){
+    .projects__box-content{
+      .projects__box-title{
+        font-size: 26px;
+      }
+      .projects__box-text{
+        font-size: 14px;
+        line-height: 16px;
+      }
+      .projects__box-link svg{
+        max-width: 60px;
+      }
     }
     .projects__box-img {
-      width: 300%;
-      }
+      width: 150%;
+    }
   }
-  @media (max-width:530px){
-    padding: 0 20px;
+  @media (max-width:325px){
+    .projects__box-img{
+      width: 170%;
+    }
   }
 }
