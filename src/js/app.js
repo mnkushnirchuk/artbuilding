@@ -200,7 +200,7 @@ window.onload = function() {
 			document.querySelector('.information__block-1').classList.add('first');
 			homePage();
 		} 
-    }, 2000); 
+    }, 3500); 
 };
 
 
