@@ -183,6 +183,24 @@
       font-size: 27px;
     }
   }
+  @media (max-width: 1440px){
+    .footer__title{
+      font-size: 34.5px;
+    }
+    .footer__form-title,
+    .footer__social-title,
+    .footer__messenger-title,
+    .footer__phone-title{
+      font-size: 24px;
+    }
+    .footer__info-maps{
+      order: 2;
+      max-height: 435px;
+      iframe{
+        max-height: 435px;
+      }
+    }
+  }
   @media (max-width: 768px){
     .footer__info-block{
       order: 1;

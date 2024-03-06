@@ -144,6 +144,7 @@
   }
   .case__box-title{
     font-size: 27px;
+    line-height: 37px;
   }
   .case__box-link{
     font-size: 25px;
@@ -161,11 +162,24 @@
     right: 5vw;
   }
 }
+@media (max-width: 1440px){
+  .case__main-img{
+    max-height: 675px;
+  }
+  .case__content{
+    gap: 30px;
+  }
+  .case__box{
+    gap: 40px;
+    p{
+      font-size: 18px;
+    }
+  }
+}
 @media (max-width: 1243px){
   .case__content{
     display: flex;
     flex-wrap: wrap;
-    gap: 70px;
   }
   .case__box-link{
     display: none;

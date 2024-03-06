@@ -270,7 +270,8 @@
 }
 @media (max-width:1622px){
   .about__subtitle{
-  font-size: 38px;
+  font-size: 34px;
+  line-height: 48px;
   }
   .about__container{
   padding: 0;
@@ -281,10 +282,72 @@
   .about__mission-title{
   font-size: 42px;
   }
+  .about__slider {
+    margin-top: rem(100);
+    display: flex;
+    gap: rem(33.75);
+    padding: 0 rem(108.75);
+    overflow: hidden;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      background: #fff;
+      width: 82.5px;
+      height: 100%;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      z-index: 3;
+      cursor: pointer;
+      max-width: rem(75);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .about__slide {
+    max-width: 32%;
+    margin-right: 34.25px;
+  }
+
+  .about__slide-title {
+    font-size: 25.5px;
+    letter-spacing: 3.267px;
+    width: 100%;
+    padding-bottom: rem(24);
+    margin-bottom: rem(18);
+  }
+}
+@media (max-width: 1440px){
+  .about__title{
+    font-size: 24px;
+  }
+  .about__team-title,
+  .about .about__team-counter{
+    font-size: 34.5px;
+  }
+  .about__team{
+    margin-top: 6rem;
+  }
 }
 @media (max-width: 1240px){
   .about__mission-title{
     font-size: 35px;
+  }
+  .about__slide{
+    max-width: 50%;
+  }
+}
+@media (max-width: 1024px){
+  .about__slide{
+    max-width: 100%;
   }
 }
 @media (max-width: 845px){
